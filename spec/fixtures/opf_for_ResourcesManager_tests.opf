@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/EPub/epub-revision/build/30/schema/package-30.rnc" type="application/relax-ng-compact-syntax"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja"
+         prefix="foaf: http://xmlns.com/foaf/spec/"
+         unique-identifier="青空文庫の番号"> <!--pub-id-->
+    <metadata xmlns:opf="http://www.idpf.org/2007/opf"
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns:dcterms="http://purl.org/dc/terms/">
+
+        <link rel="xmp-record" href="meta/底本.xmp" id="test0"/>
+        <link rel="cc:attributionURL" refines="xhtml/三.xhtml#solar-system-text" href="http://en.wikibooks.org/wiki/Wikijunior_Solar_System/Solar_System" id="test1"/>
+        <link rel="cc:attributionURL" refines="xhtml/三.xhtml#solar-system-quiz" href="http://www.think-bank.com/quiz/science/KS37L/index.html" id="test2"/>
+        <link rel="cc:attributionURL" refines="#三" href="http://www.w3schools.com/xml/note.xml" id="test3"/>
+        <link rel="cc:attributionURL" refines="#表紙" href="images/cover.jpg" id="test4"/>
+
+
+    </metadata>
+
+    <manifest>
+        <!-- stylesheets -->
+        <item id="hstyle" href="css/horizontal.css" media-type="text/css"/>
+        <item id="vstyle" href="css/vertical.css" media-type="text/css"/>
+        <!-- documents -->
+        <item id="表紙" href="xhtml/表紙.xhtml" media-type="application/xhtml+xml"/>
+        <item id="目次" properties="nav" href="xhtml/目次.xhtml" media-type="application/xhtml+xml"/>
+        <item id="一" href="xhtml/一.xhtml" media-type="application/xhtml+xml"
+              media-overlay="一_overlay"/>
+        <item id="二" href="xhtml/二.xhtml" media-type="application/xhtml+xml"
+              media-overlay="二_overlay"/>
+        <item id="三" href="xhtml/三.xhtml" media-type="application/xhtml+xml"/>
+        <item id="四" href="xhtml/四.xhtml" media-type="application/xhtml+xml"/>
+        <item id="五" href="xhtml/五.xhtml" media-type="application/xhtml+xml"/>
+        <item id="六" href="xhtml/六.xhtml" media-type="application/xhtml+xml"/>
+        <item id="七" href="xhtml/七.xhtml" media-type="application/xhtml+xml"/>
+        <item id="八" href="xhtml/八.xhtml" media-type="application/xhtml+xml"/>
+        <item id="九" href="xhtml/九.xhtml" media-type="application/xhtml+xml"/>
+        <item id="十" href="xhtml/十.xhtml" media-type="application/xhtml+xml"/>
+        <item id="十一" href="xhtml/十一.xhtml" media-type="application/xhtml+xml"/>
+        <item id="十二" href="xhtml/十二.xhtml" media-type="application/xhtml+xml"/>
+        <item id="十三" href="xhtml/十三.xhtml" media-type="application/xhtml+xml"/>
+        <item id="後付" href="xhtml/後付.xhtml" media-type="application/xhtml+xml"/>
+        <!-- images -->
+        <item id="夏目漱石" href="images/夏目漱石.jpg" media-type="image/jpeg"/>
+        <item id="書デジ" href="images/書デジ.png" media-type="image/png"/>
+        <!-- smil -->
+        <item id="一_overlay" href="xhtml/一.smil" media-type="application/smil+xml"/>
+        <item id="二_overlay" href="xhtml/二.smil" media-type="application/smil+xml"/>
+        <!-- audio -->
+        <item id="一_audio" href="audio/fmse004b.mp3" media-type="audio/mpeg"/>
+        <item id="二_audio" href="audio/ulnr0036.mp3" media-type="audio/mpeg"/>
+        <!-- fonts -->
+        <item id="foobar" href="fonts/foobar.ttf" media-type="application/vnd.ms-opentype"/>
+        <!-- misc -->
+        <!--    <item id="底本" href="meta/底本.xmp" media-type="application/rdf+xml"/>-->
+        <!-- for EPUB2 compatibility -->
+        <item id="ncxtoc" href="xhtml/toc.ncx" media-type="application/x-dtbncx+xml"/>
+    </manifest>
+
+    <spine toc="ncxtoc" page-progression-direction="rtl">
+        <itemref idref="表紙" linear="yes"/>
+        <itemref idref="目次" linear="no"/>
+        <itemref idref="一" linear="yes"/>
+        <itemref idref="二" linear="yes"/>
+        <itemref idref="三" linear="yes"/>
+        <itemref idref="四" linear="yes"/>
+        <itemref idref="五" linear="yes"/>
+        <itemref idref="六" linear="yes"/>
+        <itemref idref="七" linear="yes"/>
+        <itemref idref="八" linear="yes"/>
+        <itemref idref="九" linear="yes"/>
+        <itemref idref="十" linear="yes"/>
+        <itemref idref="十一" linear="yes"/>
+        <itemref idref="十二" linear="yes"/>
+        <itemref idref="十三" linear="yes"/>
+        <itemref idref="後付" linear="yes"/>
+    </spine>
+</package>
